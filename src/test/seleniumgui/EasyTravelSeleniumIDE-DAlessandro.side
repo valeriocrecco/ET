@@ -1,0 +1,348 @@
+{
+  "id": "8b81deb3-4d7e-406a-929b-fd0c9678d0df",
+  "version": "2.0",
+  "name": "EasyTravelSeleniumIDE-D'Alessandro",
+  "url": "http://localhost:8080/EasyTravel/login.jsp",
+  "tests": [{
+    "id": "2ad1686b-05bc-4975-90fd-ae35ac5f76ec",
+    "name": "TestStartDateGreaterThanEndDate",
+    "commands": [{
+      "id": "992754ec-4f16-4740-839a-db3bdf114872",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/EasyTravel/login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adf1f49e-a357-4ac2-aae3-ea8f2509086d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1476x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "048c8dc8-d7a0-4d2e-ba99-a6d7aa85b9a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=usr",
+      "targets": [
+        ["id=usr", "id"],
+        ["name=username", "name"],
+        ["css=#usr", "css:finder"],
+        ["xpath=//input[@id='usr']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7555b377-3b72-47b9-a17e-4bb01b5d0337",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr",
+      "targets": [
+        ["id=usr", "id"],
+        ["name=username", "name"],
+        ["css=#usr", "css:finder"],
+        ["xpath=//input[@id='usr']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Erik97"
+    }, {
+      "id": "9f671997-7660-4835-9ea1-7e4c8105695d",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=password", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Enrico1997."
+    }, {
+      "id": "a657154b-1c8e-402b-8cef-4dcbb39f21f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05274160-ff07-463f-96dc-12c809299ac5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plan a travel",
+      "targets": [
+        ["linkText=Plan a travel", "linkText"],
+        ["css=div:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Plan a travel')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'plan.jsp')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plan a travel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "070e0cb5-54bf-4c28-a3de-844f2e733de4",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec07dbff-0a5e-42ad-b475-988e3674eeae",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Safari"
+    }, {
+      "id": "6aaa26f1-f13b-418e-a922-a99ac7bd516a",
+      "comment": "",
+      "command": "click",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["name=dateStart", "name"],
+        ["css=#date", "css:finder"],
+        ["xpath=//input[@id='date']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee725a1-2975-4ea3-827e-71f4101f797b",
+      "comment": "",
+      "command": "click",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["name=dateStart", "name"],
+        ["css=#date", "css:finder"],
+        ["xpath=//input[@id='date']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3cfde04-371d-4641-a04d-9ae16e9a72ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["name=dateStart", "name"],
+        ["css=#date", "css:finder"],
+        ["xpath=//input[@id='date']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2021-03-13"
+    }, {
+      "id": "a7568a01-1911-4201-baa8-b0464d5d43f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=date1",
+      "targets": [
+        ["id=date1", "id"],
+        ["name=dateEnd", "name"],
+        ["css=#date1", "css:finder"],
+        ["xpath=//input[@id='date1']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c73f592b-7354-4463-9952-2dfb01265875",
+      "comment": "",
+      "command": "type",
+      "target": "id=date1",
+      "targets": [
+        ["id=date1", "id"],
+        ["name=dateEnd", "name"],
+        ["css=#date1", "css:finder"],
+        ["xpath=//input[@id='date1']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "2021-03-06"
+    }, {
+      "id": "1db3595a-ae09-449a-bf06-b39fa98f175e",
+      "comment": "",
+      "command": "click",
+      "target": "id=dest",
+      "targets": [
+        ["id=dest", "id"],
+        ["name=dest", "name"],
+        ["css=#dest", "css:finder"],
+        ["xpath=//input[@id='dest']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "704b6213-c55c-4417-ada7-1e31c0f38fd1",
+      "comment": "",
+      "command": "type",
+      "target": "id=dest",
+      "targets": [
+        ["id=dest", "id"],
+        ["name=dest", "name"],
+        ["css=#dest", "css:finder"],
+        ["xpath=//input[@id='dest']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Milano"
+    }, {
+      "id": "609e1674-1d6f-4545-b672-ff825f90600a",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=numberOfTravellers", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12b5e73d-751f-4cdc-a6bd-ecec3c71e5fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=numberOfTravellers", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "9a7f0dcb-8202-4fe2-a03b-a7bf3df17475",
+      "comment": "",
+      "command": "click",
+      "target": "id=number1",
+      "targets": [
+        ["id=number1", "id"],
+        ["name=numberOfRooms", "name"],
+        ["css=#number1", "css:finder"],
+        ["xpath=//input[@id='number1']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0270c2b8-c920-4ba7-97a2-26e8b046b44d",
+      "comment": "",
+      "command": "type",
+      "target": "id=number1",
+      "targets": [
+        ["id=number1", "id"],
+        ["name=numberOfRooms", "name"],
+        ["css=#number1", "css:finder"],
+        ["xpath=//input[@id='number1']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "aa557655-0651-4af2-b3b1-e23bf32ccd05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(3) .checkbox > .checkbox",
+      "targets": [
+        ["css=.form-group:nth-child(3) .checkbox > .checkbox", "css:finder"],
+        ["xpath=//div[3]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Breakfast included')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53695010-8189-4c1e-a6f6-c58aa4024286",
+      "comment": "",
+      "command": "click",
+      "target": "id=rating-star-4",
+      "targets": [
+        ["id=rating-star-4", "id"],
+        ["css=#rating-star-4", "css:finder"],
+        ["xpath=//button[@id='rating-star-4']", "xpath:attributes"],
+        ["xpath=//div[@id='rating-ability-wrapper']/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e8ee3e8-8458-41a7-bb18-a54e1f2cccfa",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0a1fd37-b351-4da3-9814-4bb656022563",
+      "comment": "",
+      "command": "click",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'If you need some help to choose the best destination for you, you can use these filters!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2de399b6-ff45-4a60-b1b0-181ad696f588",
+      "comment": "",
+      "command": "click",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'If you need some help to choose the best destination for you, you can use these filters!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ca4d5e4-ba65-4839-80f8-5b3e8b6d589e",
+      "comment": "",
+      "command": "click",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'If you need some help to choose the best destination for you, you can use these filters!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8538a550-a546-413a-a7d2-64c1e41c13fb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group > div > p",
+      "targets": [
+        ["css=.form-group > div > p", "css:finder"],
+        ["xpath=//div[6]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Start date must be before the End date!')]", "xpath:innerText"]
+      ],
+      "value": "Start date must be before the End date!"
+    }]
+  }],
+  "suites": [{
+    "id": "4e4b0718-b63e-4445-a62e-76aa0df7abe9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2ad1686b-05bc-4975-90fd-ae35ac5f76ec"]
+  }],
+  "urls": ["http://localhost:8080/EasyTravel/login.jsp"],
+  "plugins": []
+}

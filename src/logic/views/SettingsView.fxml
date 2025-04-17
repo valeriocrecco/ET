@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controllergraphics.SettingsControllerView">
+   <top>
+      <AnchorPane maxHeight="380.0" maxWidth="1920.0" minHeight="380.0" minWidth="1920.0" prefHeight="380.0" prefWidth="1920.0" style="-fx-background-color: #383131;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="88.0" layoutY="79.0" prefHeight="147.0" prefWidth="677.0" text="Easy Travel" textFill="#f9ab51" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="1229.0" AnchorPane.topAnchor="58.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="120.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogout" layoutX="1722.0" layoutY="292.0" mnemonicParsing="false" onAction="#logout" onMouseEntered="#onMouseLogoutEntered" onMouseExited="#onMouseLogoutExited" prefHeight="68.0" prefWidth="135.0" style="-fx-background-color: #f9ab51;" text="Log out" textFill="WHITE" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="1722.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="292.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="265.0" fitWidth="265.0" layoutX="1641.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="1641.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@images/logoET.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnSettings" fitHeight="68.0" fitWidth="89.0" layoutX="1640.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="1640.0" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="293.0">
+               <image>
+                  <Image url="@images/settingsButtonOver.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="1224.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="1224.0" AnchorPane.rightAnchor="643.0" AnchorPane.topAnchor="295.0">
+               <image>
+                  <Image url="@images/userButton.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUsername" layoutX="1288.0" layoutY="299.0" onMouseClicked="#showUserPage" onMouseEntered="#onMouseUsernameEntered" onMouseExited="#onMouseUsernameExited" text="Username" textFill="WHITE" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="1289.0" AnchorPane.rightAnchor="370.0" AnchorPane.topAnchor="314.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fx:id="ivNotifyBell" fitHeight="60.0" fitWidth="55.0" layoutX="1572.0" layoutY="301.0" onMouseClicked="#notifications" onMouseEntered="#onMouseNotiEntered" onMouseExited="#onMouseNotiExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="1572.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="301.0">
+               <image>
+                  <Image url="@images/notifyBell.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="btnHome" fitHeight="65.0" fitWidth="65.0" layoutX="39.0" layoutY="297.0" onMouseClicked="#home" onMouseEntered="#onMouseHomeEntered" onMouseExited="#onMouseHomeExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="1816.0" AnchorPane.topAnchor="297.0">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="980.0" AnchorPane.rightAnchor="898.0" AnchorPane.topAnchor="301.0">
+               <image>
+                  <Image url="@images/searchFollow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="lblSearchPeople" onMouseClicked="#searchUser" onMouseEntered="#onMouseSearchFollowEntered" onMouseExited="#onMouseSearchFollowExited" prefHeight="36.0" prefWidth="166.0" text="Search people" textFill="WHITE" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="1036.0" AnchorPane.rightAnchor="718.0" AnchorPane.topAnchor="314.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblUploadPhotos" layoutX="799.0" layoutY="319.0" onMouseClicked="#uploadPhotos" onMouseEntered="#onMouseUploadPhotosEntered" onMouseExited="#onMouseUploadPhotosExited" prefHeight="30.0" prefWidth="170.0" text="Upload photos" textFill="WHITE" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="784.0" AnchorPane.rightAnchor="966.0" AnchorPane.topAnchor="314.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="727.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="724.0" AnchorPane.rightAnchor="1154.0" AnchorPane.topAnchor="301.0">
+               <image>
+                  <Image url="@images/upload.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane maxHeight="700.0" minHeight="700.0" prefHeight="700.0" prefWidth="640.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="230.0" fitWidth="300.0" layoutX="186.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="167.0">
+               <image>
+                  <Image url="@images/info.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnInfo" layoutX="171.0" layoutY="433.0" mnemonicParsing="false" onAction="#personalInfo" onMouseEntered="#onMouseInfoEntered" onMouseExited="#onMouseInfoExited" prefHeight="130.0" prefWidth="260.0" style="-fx-background-color: #f9ab51;" text="MODIFY&#10;PERSONAL&#10;INFO&#10;" textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="430.0">
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="btnBack" fitHeight="83.0" fitWidth="86.0" onMouseClicked="#back" onMouseEntered="#onMouseBackEntered" onMouseExited="#onMouseBackExited" pickOnBounds="true" preserveRatio="true" x="33.0" y="591.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="582.0">
+               <image>
+                  <Image url="@images/back.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane maxHeight="700.0" minHeight="700.0" prefHeight="700.0" prefWidth="640.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="208.0" fitWidth="300.0" layoutX="174.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="167.0">
+               <image>
+                  <Image url="@images/li.jpeg" />
+               </image>
+            </ImageView>
+            <Button disable="true" layoutX="170.0" layoutY="431.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="260.0" style="-fx-background-color: #f9ab51;" text="YOUR&#10;ACTIVITY" textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="430.0">
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane maxHeight="700.0" minHeight="700.0" prefHeight="700.0" prefWidth="640.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="199.0" fitWidth="269.0" layoutX="201.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="167.0">
+               <image>
+                  <Image url="@images/pa.png" />
+               </image>
+            </ImageView>
+            <Button disable="true" layoutX="171.0" layoutY="430.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="260.0" style="-fx-background-color: #f9ab51;" text="PAYMENT&#10;METHODS&#10;" textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="430.0">
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controllergraphics.ProfileControllerView">
+   <top>
+      <AnchorPane maxHeight="380.0" maxWidth="1920.0" minHeight="380.0" minWidth="1920.0" prefHeight="380.0" prefWidth="1920.0" style="-fx-background-color: #383131;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="88.0" layoutY="79.0" prefHeight="147.0" prefWidth="677.0" text="Easy Travel" textFill="#f9ab51" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="1229.0" AnchorPane.topAnchor="58.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="120.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogout" layoutX="1722.0" layoutY="292.0" mnemonicParsing="false" onAction="#logout" onMouseEntered="#onMouseLogoutEntered" onMouseExited="#onMouseLogoutExited" prefHeight="68.0" prefWidth="135.0" style="-fx-background-color: #f9ab51;" text="Log out" textFill="WHITE" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="1722.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="292.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="265.0" fitWidth="265.0" layoutX="1641.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="1641.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@images/logoET.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnSettings" fitHeight="68.0" fitWidth="89.0" layoutX="1640.0" layoutY="293.0" onMouseClicked="#settings" onMouseEntered="#onMouseSettingsEntered" onMouseExited="#onMouseSettingsExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="1640.0" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="293.0">
+               <image>
+                  <Image url="@images/settingsButtonBasic.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="1224.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="1224.0" AnchorPane.rightAnchor="643.0" AnchorPane.topAnchor="295.0">
+               <image>
+                  <Image url="@images/userButtonSelected.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUsername" layoutX="1288.0" layoutY="299.0" prefWidth="261.0" text="Username" textFill="WHITE" AnchorPane.leftAnchor="1288.0" AnchorPane.rightAnchor="371.0" AnchorPane.topAnchor="314.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <ImageView fx:id="ivNotifyBell" fitHeight="60.0" fitWidth="55.0" layoutX="1572.0" layoutY="301.0" onMouseClicked="#notifications" onMouseEntered="#onMouseNotiEntered" onMouseExited="#onMouseNotiExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="1572.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="301.0">
+               <image>
+                  <Image url="@images/notifyBell.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="btnHome" fitHeight="65.0" fitWidth="65.0" layoutX="39.0" layoutY="297.0" onMouseClicked="#home" onMouseEntered="#onMouseHomeEntered" onMouseExited="#onMouseHomeExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="1816.0" AnchorPane.topAnchor="297.0">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="btnSearchFollow" fitHeight="60.0" fitWidth="55.0" layoutX="935.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="980.0" AnchorPane.rightAnchor="898.0" AnchorPane.topAnchor="301.0">
+               <image>
+                  <Image url="@images/searchFollow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="lblSearchPeople" onMouseClicked="#searchUser" onMouseEntered="#onMouseSearchFollowEntered" onMouseExited="#onMouseSearchFollowExited" prefHeight="30.0" prefWidth="167.0" text="Search people" textFill="WHITE" AnchorPane.leftAnchor="1036.0" AnchorPane.rightAnchor="717.0" AnchorPane.topAnchor="314.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblUploadPhotos" layoutX="696.0" layoutY="304.0" onMouseClicked="#uploadPhotos" onMouseEntered="#onMouseUploadPhotosEntered" onMouseExited="#onMouseUploadPhotosExited" prefHeight="30.0" prefWidth="167.0" text="Upload photos" textFill="WHITE" AnchorPane.leftAnchor="784.0" AnchorPane.rightAnchor="969.0" AnchorPane.topAnchor="314.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="613.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="724.0" AnchorPane.rightAnchor="1154.0" AnchorPane.topAnchor="301.0">
+               <image>
+                  <Image url="@images/upload.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane maxHeight="700.0" minHeight="700.0" prefHeight="700.0" prefWidth="1920.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="btnBack" fitHeight="83.0" fitWidth="86.0" onMouseClicked="#back" onMouseEntered="#onMouseBackEntered" onMouseExited="#onMouseBackExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="1802.0" AnchorPane.topAnchor="582.0">
+               <image>
+                  <Image url="@images/back.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="lblPrivateTravels" layoutX="637.0" layoutY="38.0" prefHeight="38.0" prefWidth="598.0" text="Your past private travels " AnchorPane.bottomAnchor="624.0" AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="685.0" AnchorPane.topAnchor="38.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tvUserTravels" layoutX="637.0" layoutY="78.0" onMouseClicked="#pastPrivateTravelSelected" prefHeight="258.0" prefWidth="825.0" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="458.0">
+               <columns>
+                  <TableColumn fx:id="tcTraveName" editable="false" prefWidth="309.0" text="Travel name" />
+                  <TableColumn fx:id="tcDest" editable="false" minWidth="0.0" prefWidth="491.0" text="Destination" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="220.0" layoutY="109.0" prefHeight="415.0" prefWidth="305.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="220.0">
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <children>
+                  <Label fx:id="lblProfileUsername" alignment="CENTER" layoutX="3.0" layoutY="165.0" prefHeight="34.0" prefWidth="297.0" text="Username" textAlignment="CENTER" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="5.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblProfileEmail" alignment="CENTER" layoutX="2.0" layoutY="193.0" prefHeight="24.0" prefWidth="302.0" text="email" textAlignment="CENTER" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="1.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="ivUserPhoto" fitHeight="150.0" fitWidth="150.0" layoutX="78.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="77.0">
+                     <image>
+                        <Image url="@images/userButton.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnProfile" layoutX="30.0" layoutY="451.0" mnemonicParsing="false" onAction="#modifyProfile" onMouseEntered="#onMouseProfileEntered" onMouseExited="#onMouseProfileExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="MODIFY PROFILE" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="9.0" radius="4.0" width="9.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnFollowers" layoutX="60.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#seeFollowers" onMouseEntered="#onMouseFollowersEntered" onMouseExited="#onMouseFollowersExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="SEE FOLLOWERS" textFill="WHITE" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="9.0" radius="4.0" width="9.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tvUserTravelsGr" layoutX="637.0" layoutY="376.0" onMouseClicked="#pastPublicTravelSelected" prefHeight="258.0" prefWidth="825.0" AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="458.0">
+               <columns>
+                  <TableColumn fx:id="tcTraveNameGr" editable="false" prefWidth="310.0" text="Travel name" />
+                  <TableColumn fx:id="tcDestGr" editable="false" minWidth="0.0" prefWidth="489.0" text="Destination" />
+               </columns>
+            </TableView>
+            <Label fx:id="lblPublicTravels" layoutX="637.0" layoutY="337.0" prefHeight="39.0" prefWidth="615.0" text="Your past public travels " AnchorPane.leftAnchor="637.0" AnchorPane.rightAnchor="668.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tvUserBookedPrivateTravels" layoutX="637.0" layoutY="60.0" onMouseClicked="#nextPrivateTravelSelected" prefHeight="256.0" prefWidth="825.0" visible="false" AnchorPane.bottomAnchor="364.0" AnchorPane.rightAnchor="458.0">
+               <columns>
+                  <TableColumn fx:id="tcPrivateTravelName" editable="false" prefWidth="310.0" text="Travel name" />
+                  <TableColumn fx:id="tcDestPrivate" editable="false" minWidth="0.0" prefWidth="250.0" text="Destination" />
+                  <TableColumn fx:id="tcFromPrivate" editable="false" prefWidth="120.0" resizable="false" text="From" />
+                  <TableColumn fx:id="tcToPrivate" editable="false" prefWidth="120.0" text="To" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tvUserBookedPublicTravels" layoutX="637.0" layoutY="392.0" onMouseClicked="#nextPublicTravelSelected" prefHeight="255.0" prefWidth="825.0" visible="false" AnchorPane.bottomAnchor="66.0">
+               <columns>
+                  <TableColumn fx:id="tcPublicTravelName" editable="false" prefWidth="310.0" text="Travel name" />
+                  <TableColumn fx:id="tcDestPublic" editable="false" minWidth="0.0" prefWidth="250.0" text="Destination" />
+                  <TableColumn fx:id="tcFromPublic" editable="false" prefWidth="120.0" resizable="false" text="From" />
+                  <TableColumn fx:id="tcToPublic" editable="false" prefWidth="120.0" text="To" />
+               </columns>
+            </TableView>
+            <Label layoutX="1680.0" layoutY="27.0" prefHeight="33.0" prefWidth="216.0" text="Display:" wrapText="true">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="28.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbPastTravel" layoutX="1681.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#setTablePastTravels" text="Past travels">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="19.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbNextTravel" layoutX="1681.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#setTableNextTravels" text="Next booked travels">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="19.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="btnSeePhotos" layoutX="1482.0" layoutY="168.0" mnemonicParsing="false" onMouseClicked="#seePhotos" onMouseEntered="#onMouseSeePhotosEntered" onMouseExited="#onMouseSeePhotosExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="View photos" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnViewHotel" layoutX="1482.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#viewHotel" onMouseEntered="#onMouseViewHotelEntered" onMouseExited="#onMouseViewHotelExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="View hotel" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnDetail" layoutX="1482.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#detail" onMouseEntered="#onMouseDetailEntered" onMouseExited="#onMouseDetailExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="Detail" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSeePhotosGr" layoutX="1482.0" layoutY="462.0" mnemonicParsing="false" onMouseClicked="#seePhotosGr" onMouseEntered="#onMouseSeePhotosGrEntered" onMouseExited="#onMouseSeePhotosGrExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="View photos" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnViewHotelGr" layoutX="1482.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#viewHotelGr" onMouseEntered="#onMouseViewHotelGrEntered" onMouseExited="#onMouseViewHotelGrExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="View hotel" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnDetailGr" layoutX="1482.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#detailGr" onMouseEntered="#onMouseDetailGrEntered" onMouseExited="#onMouseDetailGrExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="Detail" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </right>
+</BorderPane>

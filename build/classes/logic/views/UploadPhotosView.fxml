@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1032.0" style="-fx-background-color: #622100;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controllergraphics.UploadPhotosControllerView">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="554.0" prefWidth="990.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <effect>
+            <DropShadow height="9.0" radius="4.0" width="9.0" />
+         </effect>
+         <children>
+            <Label layoutX="31.0" layoutY="22.0" prefHeight="39.0" prefWidth="354.0" text="Your past private travels " AnchorPane.leftAnchor="39.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="298.0" prefHeight="39.0" prefWidth="338.0" text="Your past public travels " AnchorPane.leftAnchor="39.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tvPrivateTravels" layoutX="39.0" layoutY="61.0" onMouseClicked="#privateTravelSelected" prefHeight="214.0" prefWidth="695.0" AnchorPane.leftAnchor="39.0">
+              <columns>
+                <TableColumn fx:id="tcTravelName" editable="false" prefWidth="312.0" text="Travel name" />
+                <TableColumn fx:id="tcDestination" editable="false" prefWidth="356.0" text="Destination" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tvPublicTravels" layoutX="39.0" layoutY="337.0" onMouseClicked="#publicTravelSelected" prefHeight="214.0" prefWidth="695.0" AnchorPane.leftAnchor="39.0">
+              <columns>
+                <TableColumn fx:id="tcTravelGrName" editable="false" prefWidth="312.0" text="Travel name" />
+                <TableColumn fx:id="tcDestinationGr" editable="false" prefWidth="356.0" text="Destination" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnAddPhotosGr" layoutX="760.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#addPhotosGr" onMouseEntered="#onMouseAddPhotosGrEntered" onMouseExited="#onMouseAddPhotosGrExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="Add photos" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAddPhotos" layoutX="760.0" layoutY="144.0" mnemonicParsing="false" onMouseClicked="#addPhotos" onMouseEntered="#onMouseAddPhotosEntered" onMouseExited="#onMouseAddPhotosExited" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #f9ab51;" text="Add photos" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

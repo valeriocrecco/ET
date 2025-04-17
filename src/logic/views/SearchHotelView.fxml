@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controllergraphics.SearchHotelsControllerView">
+   <top>
+      <AnchorPane prefHeight="360.0" prefWidth="1926.0" style="-fx-background-color: #383131;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="380.0" maxWidth="1920.0" minHeight="380.0" minWidth="1920.0" prefHeight="380.0" prefWidth="1920.0" style="-fx-background-color: #383131;">
+               <children>
+                  <Label layoutX="88.0" layoutY="79.0" prefHeight="147.0" prefWidth="677.0" text="Easy Travel" textFill="#f9ab51" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="1229.0" AnchorPane.topAnchor="58.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro" size="120.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLogout" layoutX="1722.0" layoutY="292.0" mnemonicParsing="false" onAction="#logout" onMouseEntered="#onMouseLogoutEntered" onMouseExited="#onMouseLogoutExited" prefHeight="68.0" prefWidth="135.0" style="-fx-background-color: #f9ab51;" text="Log out" textFill="WHITE" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="1722.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="292.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="265.0" fitWidth="265.0" layoutX="1641.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="1641.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@images/logoET.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSettings" fitHeight="68.0" fitWidth="89.0" layoutX="1640.0" layoutY="293.0" onMouseClicked="#settings" onMouseEntered="#onMouseSettingsEntered" onMouseExited="#onMouseSettingsExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="1640.0" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="293.0">
+                     <image>
+                        <Image url="@images/settingsButtonBasic.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="1224.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="1224.0" AnchorPane.rightAnchor="643.0" AnchorPane.topAnchor="295.0">
+                     <image>
+                        <Image url="@images/userButton.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblUsername" layoutX="1288.0" layoutY="299.0" onMouseClicked="#showUserPage" onMouseEntered="#onMouseUsernameEntered" onMouseExited="#onMouseUsernameExited" prefWidth="261.0" text="Username" textFill="WHITE" AnchorPane.leftAnchor="1288.0" AnchorPane.rightAnchor="371.0" AnchorPane.topAnchor="314.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fx:id="ivNotifyBell" fitHeight="60.0" fitWidth="55.0" layoutX="1572.0" layoutY="301.0" onMouseClicked="#notify" onMouseEntered="#onMouseNotiEntered" onMouseExited="#onMouseNotiExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="1572.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="301.0">
+                     <image>
+                        <Image url="@images/notifyBell.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="btnHome" fitHeight="65.0" fitWidth="65.0" layoutX="39.0" layoutY="297.0" onMouseClicked="#home" onMouseEntered="#onMouseHomeEntered" onMouseExited="#onMouseHomeExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="1816.0" AnchorPane.topAnchor="297.0">
+                     <image>
+                        <Image url="@images/home.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="btnSearchFollow" fitHeight="60.0" fitWidth="55.0" layoutX="935.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="980.0" AnchorPane.rightAnchor="898.0" AnchorPane.topAnchor="301.0">
+                     <image>
+                        <Image url="@images/searchFollow.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="lblSearchPeople" onMouseClicked="#searchUser" onMouseEntered="#onMouseSearchFollowEntered" onMouseExited="#onMouseSearchFollowExited" prefHeight="30.0" prefWidth="163.0" text="Search people" textFill="WHITE" AnchorPane.leftAnchor="1036.0" AnchorPane.rightAnchor="721.0" AnchorPane.topAnchor="314.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="lblUploadPhotos" layoutX="696.0" layoutY="295.0" onMouseClicked="#uploadPhotos" onMouseEntered="#onMouseUploadPhotosEntered" onMouseExited="#onMouseUploadPhotosExited" prefHeight="30.0" prefWidth="166.0" text="Upload photos" textFill="WHITE" AnchorPane.leftAnchor="784.0" AnchorPane.rightAnchor="970.0" AnchorPane.topAnchor="314.0">
+                     <font>
+                        <Font name="Neue Haas Grotesk Text Pro" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="535.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="724.0" AnchorPane.rightAnchor="1154.0" AnchorPane.topAnchor="301.0">
+                     <image>
+                        <Image url="@images/upload.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane maxHeight="700.0" minHeight="700.0" prefHeight="700.0" prefWidth="1920.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="btnBack" fitHeight="83.0" fitWidth="86.0" onMouseClicked="#back" onMouseEntered="#onMouseBackEntered" onMouseExited="#onMouseBackExited" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="1802.0" AnchorPane.topAnchor="582.0">
+               <image>
+                  <Image url="@images/back.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="242.0" layoutY="24.0" prefHeight="74.0" prefWidth="616.0" text="Travel info" AnchorPane.bottomAnchor="622.0" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="1062.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="51.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.5" />
+               </effect>
+            </Label>
+            <TableView fx:id="table" layoutX="1016.0" layoutY="92.0" prefHeight="470.0" prefWidth="775.0" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="1016.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="92.0">
+               <columns>
+                  <TableColumn fx:id="colHotel" editable="false" prefWidth="749.0" resizable="false" text="Hotel" />
+               </columns>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TableView>
+            <Button fx:id="btnSelectHotel" alignment="CENTER" layoutX="1636.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#onMouseBtnSelectHotelClicked" onMouseEntered="#onMouseBtnSelectHotelEntered" onMouseExited="#onMouseBtnSelectHotelExited" prefHeight="37.0" prefWidth="155.0" style="-fx-background-color: #f9ab51;" text="Select hotel" textFill="WHITE" visible="false" AnchorPane.leftAnchor="1613.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="588.0">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect></Button>
+            <Label layoutX="241.0" layoutY="157.0" prefHeight="29.0" prefWidth="108.0" text="Destination">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Label layoutX="241.0" layoutY="208.0" prefHeight="31.0" prefWidth="61.0" text="Stars">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Label layoutX="241.0" layoutY="251.0" prefHeight="41.0" prefWidth="142.0" text="Price per night">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Label layoutX="241.0" layoutY="303.0" prefHeight="34.0" prefWidth="101.0" text="Breakfast">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Label layoutX="241.0" layoutY="351.0" prefHeight="34.0" prefWidth="96.0" text="Start date">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Label layoutX="241.0" layoutY="399.0" prefHeight="34.0" prefWidth="91.0" text="End date">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Label layoutX="241.0" layoutY="448.0" prefHeight="34.0" prefWidth="95.0" text="Travelers">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Label layoutX="241.0" layoutY="496.0" prefHeight="34.0" prefWidth="67.0" text="Rooms">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro" size="20.0" />
+               </font></Label>
+            <Button fx:id="btnSearch" layoutX="402.0" layoutY="558.0" mnemonicParsing="false" onMouseClicked="#onMouseSearchClicked" onMouseEntered="#onMouseSearchEntered" onMouseExited="#onMouseSearchExited" prefHeight="55.0" prefWidth="116.0" style="-fx-background-color: #f9ab51;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="1.75" width="9.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Separator layoutX="870.0" layoutY="47.0" orientation="VERTICAL" prefHeight="560.0" prefWidth="0.0">
+               <effect>
+                  <DropShadow color="#111111" />
+               </effect>
+            </Separator>
+            <ImageView fx:id="ivwLoading" fitHeight="51.0" fitWidth="51.0" layoutX="527.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/black-loading-icon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="fdDest" editable="false" layoutX="426.0" layoutY="157.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="fdStars" editable="false" layoutX="387.0" layoutY="208.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="fdPrice" editable="false" layoutX="436.0" layoutY="256.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="fdBreakfast" editable="false" layoutX="399.0" layoutY="304.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="fdStartDate" editable="false" layoutX="392.0" layoutY="352.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="fdEndDate" editable="false" layoutX="383.0" layoutY="400.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="fdTrav" editable="false" layoutX="401.0" layoutY="448.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="fdRooms" editable="false" layoutX="402.0" layoutY="496.0">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TextField>
+            <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="358.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/destination.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="80.0" layoutX="300.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/five-stars.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="340.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/breakfast.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="62.0" layoutX="330.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/calendar-date-dep.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="62.0" layoutX="321.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/calendar-date-arr.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="78.0" layoutX="326.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/travellers.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="52.0" layoutX="337.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/rooms.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="379.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/price.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSeeMore" alignment="CENTER" layoutX="1410.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#seeMoreHotel" onMouseEntered="#onMouseBtnSeeMoreEntered" onMouseExited="#onMouseBtnSeeMoreExited" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #f9ab51;" text="See more on website" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Neue Haas Grotesk Text Pro Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="9.0" radius="4.0" width="9.0" />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

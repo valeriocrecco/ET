@@ -1,0 +1,326 @@
+{
+  "id": "4a2e0472-ea9d-4006-bcc2-2e49d28bde3a",
+  "version": "2.0",
+  "name": "EasyTravelSeleniumIDE-Crecco",
+  "url": "http://localhost:8080/EasyTravel/login.jsp",
+  "tests": [{
+    "id": "94150452-0e43-4a7d-9835-5f01b177337a",
+    "name": "TestDatesPlan",
+    "commands": [{
+      "id": "9b3a4db7-8011-44eb-9384-2c2291540163",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/EasyTravel/login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47d9b848-7663-4225-a5f3-a74d26effd22",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1476x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e63f058b-1409-42ff-834c-df4b7a38086f",
+      "comment": "",
+      "command": "click",
+      "target": "id=usr",
+      "targets": [
+        ["id=usr", "id"],
+        ["name=username", "name"],
+        ["css=#usr", "css:finder"],
+        ["xpath=//input[@id='usr']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b27063e7-ad18-4522-a555-d99b1f100189",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr",
+      "targets": [
+        ["id=usr", "id"],
+        ["name=username", "name"],
+        ["css=#usr", "css:finder"],
+        ["xpath=//input[@id='usr']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Valerio23"
+    }, {
+      "id": "43cefced-b3b6-4ac6-bac2-53da1eee7872",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=password", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f6e3ed8-3d70-4720-9bab-9a90701b08ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=password", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Valerio23."
+    }, {
+      "id": "0156c60e-4f19-463f-ba11-a45a7999c6e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b68acf0d-0ab5-4aef-a4a9-09feb939197a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plan a travel",
+      "targets": [
+        ["linkText=Plan a travel", "linkText"],
+        ["css=div:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Plan a travel')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'plan.jsp')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plan a travel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1ac7ff2-3a24-409f-aa9a-014f85fd2eb2",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31bdd558-6f02-4b04-9449-14fdd77d0d4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Safari"
+    }, {
+      "id": "53d62a48-17d1-4906-9150-31e70d53c62d",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .radio:nth-child(2) > .radio",
+      "targets": [
+        ["css=div:nth-child(2) > .radio:nth-child(2) > .radio", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Public')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28211211-6e73-4cdb-b3c6-b8b957b53e58",
+      "comment": "",
+      "command": "click",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["name=dateStart", "name"],
+        ["css=#date", "css:finder"],
+        ["xpath=//input[@id='date']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4514735-20fa-4aa6-a636-af2527a8090d",
+      "comment": "",
+      "command": "type",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["name=dateStart", "name"],
+        ["css=#date", "css:finder"],
+        ["xpath=//input[@id='date']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2021-02-17"
+    }, {
+      "id": "5e3f6ea0-546e-4520-9a39-deadf7ec4727",
+      "comment": "",
+      "command": "click",
+      "target": "id=date1",
+      "targets": [
+        ["id=date1", "id"],
+        ["name=dateEnd", "name"],
+        ["css=#date1", "css:finder"],
+        ["xpath=//input[@id='date1']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d9dbcb-a545-44d9-ab20-54b04343c165",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .radio:nth-child(1) > .radio",
+      "targets": [
+        ["css=div:nth-child(2) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Private')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c568ea59-87c0-4b5c-bd73-02f1cc04bdbb",
+      "comment": "",
+      "command": "click",
+      "target": "id=date1",
+      "targets": [
+        ["id=date1", "id"],
+        ["name=dateEnd", "name"],
+        ["css=#date1", "css:finder"],
+        ["xpath=//input[@id='date1']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e51328f2-223f-4619-b1c7-e7e1114a1f0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=date1",
+      "targets": [
+        ["id=date1", "id"],
+        ["name=dateEnd", "name"],
+        ["css=#date1", "css:finder"],
+        ["xpath=//input[@id='date1']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "2021-03-06"
+    }, {
+      "id": "22ef9798-27e8-4062-aa84-a77cd6b56936",
+      "comment": "",
+      "command": "click",
+      "target": "id=dest",
+      "targets": [
+        ["id=dest", "id"],
+        ["name=dest", "name"],
+        ["css=#dest", "css:finder"],
+        ["xpath=//input[@id='dest']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b51453a-c600-4569-9201-5e4fd17548ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=dest",
+      "targets": [
+        ["id=dest", "id"],
+        ["name=dest", "name"],
+        ["css=#dest", "css:finder"],
+        ["xpath=//input[@id='dest']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Milano"
+    }, {
+      "id": "70a34397-9c31-42ad-96e4-df82e4b5417b",
+      "comment": "",
+      "command": "click",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=numberOfTravellers", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0991bec6-a992-4a1f-bdec-1be43b965cfb",
+      "comment": "",
+      "command": "type",
+      "target": "id=number",
+      "targets": [
+        ["id=number", "id"],
+        ["name=numberOfTravellers", "name"],
+        ["css=#number", "css:finder"],
+        ["xpath=//input[@id='number']", "xpath:attributes"],
+        ["xpath=//form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "a1e517a7-fbd5-4c78-bae5-a871363b43ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=number1",
+      "targets": [
+        ["id=number1", "id"],
+        ["name=numberOfRooms", "name"],
+        ["css=#number1", "css:finder"],
+        ["xpath=//input[@id='number1']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "170d8167-42b8-4e2c-9bc6-994ed3678b63",
+      "comment": "",
+      "command": "type",
+      "target": "id=number1",
+      "targets": [
+        ["id=number1", "id"],
+        ["name=numberOfRooms", "name"],
+        ["css=#number1", "css:finder"],
+        ["xpath=//input[@id='number1']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "705155b5-5f83-4ed1-aadc-457e716b78ac",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68b64a1c-de90-4af6-91a9-48d5406672f9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-group > div > p",
+      "targets": [
+        ["css=.form-group > div > p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Number of rooms must be greater or equal than the number of travellers!')]", "xpath:innerText"]
+      ],
+      "value": "Number of rooms must be greater or equal than the number of travellers!"
+    }]
+  }],
+  "suites": [{
+    "id": "1419ae6d-99a1-4310-aec0-9598f782abc3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/EasyTravel/login.jsp"],
+  "plugins": []
+}
